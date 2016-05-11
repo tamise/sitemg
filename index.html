@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="icon" type="image/png" href="images/fav.png">
+        <link rel="stylesheet" href="mgstyle_fp.css" />
+        <link rel="stylesheet" href="mgresp.css" /> <!-- responsive style sheet --> 
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'><!-- police "lato" --> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+         <script type="text/javascript"> // animation icone hamburger
+          $(document).ready(function(){
+            $('#nav-icon').click(function(){
+             $(this).toggleClass('open');
+            });
+          });
+        </script>
+        <script type="text/javascript"> // toggle du menu mobile
+          jQuery(function($){
+            $( '#nav-icon' ).click(function(){
+              $('.menu_resp').toggleClass('expand')
+            })
+          })
+        </script>
+        <title>Tamise - Infographie</title>
+    </head>
+
+
+    <body>
+
+    
+		<header>
+
+			 <div id="barre1">
+	              <div id="logo">
+	                <a href="index.html"><img src="images/logo_n.png" id="logonoir"><img src="images/logo_b.png" id="logoblanc"></a>
+	              </div> <!-- #logo-->
+	              <div id="nav-icon">
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	              </div>
+		      </div>
+
+			<nav>
+				<ul class="outside_box">
+					<li class="our_content" class="position"><span style="background-color: #fff"><a href="#" style="color: #000"><img src="images/home_n.png" class="home"></a></span></li>
+					<li class="our_content" class="position"><span style="background-color: #fff"><a href="portfolio.html" style="color: #000">Portfolio</a></span>
+						<ul class="submenu">
+							<li><a href="portfolio.html?#print">Print</a></li>
+							<li><a href="portfolio.html?#web">Web</a></li>
+							<li><a href="portfolio.html?#illustrations">Illustrations</a></li>
+						</ul><!-- #submenu-->
+					</li>
+					<li class="our_content"><span style="background-color: #fff"><a href="cv.html" style="color: #000">CV</a></span>
+					</li>
+					<li class="our_content"><span style="background-color: #fff"><a href="#"style="color: #000">Blog</a></span>
+					</li>
+					<li class="our_content"><span style="background-color: #fff"><a href="#"style="color: #000">Contact</a></span>
+					</li>
+				</ul><!-- #outside_box-->
+
+				<ul class="menu_resp">
+		          <li><a href="index.html">Accueil</a></li>
+		          <li><a href="portfolio.html">Portfolio</a></li>
+		          <li><a href="portfolio.html?#print">Print</a></li>
+		          <li><a href="portfolio.html?#web">Web</a></li>
+		          <li><a href="portfolio.html?#illustrations">Illustrations</a></li>
+		          <li><a href="cv.html">CV</a></li>
+		          <li><a href="#">Blog</a></li>
+		          <li><a href="#">Contact</a></li>
+		        </ul><!-- menu_resp-->
+			</nav>
+
+		</header>
+
+		<main id="front-page">
+
+			<div class="centerize"><img src="images/fond1.png" id="fond1">
+			</div>
+			<div class="centerize"><img src="images/fond2.png" id="fond2">
+			</div>
+			<div id="conteneur-monde" class="centerize"><img src="images/monde.png" id="monde">
+			</div>
+			<div id="contenu_bicolor">
+				<div id="bloc_trans"><img src="images/img_trans.png">
+				</div>
+				<div id="bloc_vert">
+				</div>		
+			</div><!-- #bicolor -->
+			<div id="contenant_fp">
+				<div id="pastille" class="centerize"><img src="images/cercle.png">
+				</div>
+				<div id="fleche"><a href="#apropos"><img src="images/fleche_bas.png" id="img_fleche"/></a>
+				</div>
+			</div> <!-- #contenant_fp-->
+			
+			<div id="contenant_txt">
+				<div id="apropos"><h1>à propos de moi</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet, magna ac accumsan placerat, massa odio varius arcu, id gravida odio sapien tristique mauris. Integer ullamcorper purus non gravida porta. Suspendisse vulputate auctor nisi at mollis. Nunc quis faucibus libero. Sed fermentum, sapien in rhoncus ultrices, lacus ante rhoncus urna, eu ultrices justo justo quis tortor. Curabitur posuere consectetur dolor, at bibendum libero. Vestibulum consequat odio sed mi aliquam, et laoreet magna tempus. Nullam nibh dui, pulvinar non nunc quis, faucibus porta nisi. Curabitur nec blandit nisi, vitae scelerisque nibh.</p>
+				</div><!-- #apropos-->
+				<div id="wip"><h1>Travaux récents</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet, magna ac accumsan placerat, massa odio varius arcu, id gravida odio sapien tristique mauris. Integer ullamcorper purus non gravida porta. Suspendisse vulputate auctor nisi at mollis. Nunc quis faucibus libero. Sed fermentum, sapien in rhoncus ultrices, lacus ante rhoncus urna, eu ultrices justo justo quis tortor. Curabitur posuere consectetur dolor, at bibendum libero. Vestibulum consequat odio sed mi aliquam, et laoreet magna tempus. Nullam nibh dui, pulvinar non nunc quis, faucibus porta nisi. Curabitur nec blandit nisi, vitae scelerisque nibh.</p>
+					<p class="conteneur_galerie">
+						<a href=""><img src="images/shutterstock_357753350.jpg" /></a>
+						<a href=""><img src="images/shutterstock_65954812.jpg" /></a>
+						<a href=""><img src="images/shutterstock_181472597.jpg" /></a>
+						<a href=""><img src="images/shutterstock_292663790.jpg" /></a>
+					</p>
+				</div><!-- #wip -->
+			</div><!-- #contenant_txt -->
+
+		</main>
+
+		<footer>
+
+			<div>
+				Copyright - tamise 2016
+			</div>
+
+		</footer>
+		
+
+
+
+
+    </body>
+
+
+</html>

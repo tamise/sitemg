@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="icon" type="image/png" href="images/fav.png">
+        <link rel="stylesheet" href="mgstyle.css" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="mgresp.css" /> <!-- responsive style sheet --> 
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'><!-- police "lato" --> 
+        <link rel="stylesheet" type="text/css" media="all" href="css/magnific-popup.css">
+        <link rel="icon" type="image/png" href="/image/fav.png" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+
+        <script type="text/javascript"> // animation icone hamburger
+          $(document).ready(function(){
+            $('#nav-icon').click(function(){
+             $(this).toggleClass('open');
+            });
+          });
+        </script>
+        <script type="text/javascript"> // toggle du menu mobile
+          jQuery(function($){
+            $( '#nav-icon' ).click(function(){
+              $('.menu_resp').toggleClass('expand')
+            })
+          })
+        </script>
+        <script type="text/javascript"> // lightbox responsive
+        $(function(){
+          $('#portfolio').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            image: {
+              cursor: null,
+              titleSrc: 'title'
+            },
+            gallery: {
+              enabled: true,
+              preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+              navigateByImgClick: true
+            }
+          });
+        });
+        </script>
+        <script type="text/javascript"> // lightbox responsive
+        $(function(){
+          $('#portfolio2').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            image: {
+              cursor: null,
+              titleSrc: 'title'
+            },
+            gallery: {
+              enabled: true,
+              preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+              navigateByImgClick: true
+            }
+          });
+        });
+        </script>
+        <script type="text/javascript"> // lightbox responsive
+        $(function(){
+          $('#portfolio3').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            image: {
+              cursor: null,
+              titleSrc: 'title'
+            },
+            gallery: {
+              enabled: true,
+              preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+              navigateByImgClick: true
+            }
+          });
+        });
+        </script>
+        <title>Tamise - Infographie</title>
+    </head>
+
+
+    <body>
+
+    
+    <header>
+
+      <div id="barre1">
+              <div id="logo">
+                <a href="index.html"><img src="images/logo_b.png"></a>
+              </div> <!-- #logo-->
+              <div id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+      </div>
+
+      <nav>
+        <ul class="outside_box">
+          <li class="our_content" class="position"><span><a href="index.html"><img src="images/home_b.png" class="home"></a></span></li>
+          <li class="our_content" class="position"><span style="border-bottom: 5px solid #fdb813;"><a href="portfolio.html">Portfolio</a></span>
+            <ul class="submenu">
+              <li><a href="portfolio.html?#print">Print</a></li>
+              <li><a href="portfolio.html?#web">Web</a></li>
+              <li><a href="portfolio.html?#illustrations">Illustrations</a></li>
+            </ul><!-- #submenu-->
+          </li>
+          <li class="our_content"><span><a href="cv.html">CV</a></span>
+          </li>
+          <li class="our_content"><span><a href="#">Blog</a></span>
+          </li>
+          <li class="our_content"><span><a href="#">Contact</a></span>
+          </li>
+        </ul><!-- #outside_box-->
+
+        <ul class="menu_resp">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html?#print">Print</a></li>
+          <li><a href="portfolio.html?#web">Web</a></li>
+          <li><a href="portfolio.html?#illustrations">Illustrations</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul><!-- menu_resp-->
+
+      </nav>
+
+    </header>
+
+    <main>
+      <div class="titre">
+          <div class="carre">
+          </div>
+            <h1>Portfolio</h1>
+      </div><!-- .titre-->
+
+      <article class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales fringilla scelerisque. Mauris in molestie ex. Maecenas sit amet neque nec erat cursus dictum. Cras bibendum mauris in massa consectetur interdum. Proin facilisis sem id ligula mattis, a commodo est vulputate. Cras nec augue commodo, rhoncus lorem a, sollicitudin purus. Cras non augue augue. Ut at diam ultrices, dapibus ante ac, cursus sem. Fusce tincidunt quam mauris, condimentum posuere diam suscipit id. Vivamus enim nunc, luctus sed sem ac, pellentesque consequat nibh. Sed tellus est, blandit ac tristique volutpat, suscipit sed ex. Mauris lacinia interdum est at placerat. Ut quis odio nisl. Cras a lacus diam.
+      </article>
+
+      <div class="sous_titre">
+        <h3 id="print">Print</h3>
+        <div class="trait"></div>
+      </div>
+
+      <div class="pf_wrapper">
+      
+        <ul id="portfolio" class="clearfix">
+          <li><a href="images/item01@2x.jpg" title="titre 1"><img src="images/item01.jpg" alt="brick and by windows"></a></li>
+          <!-- https://dribbble.com/shots/1543255-Brick-and-Bay-Windows -->
+          
+          <li><a href="images/item02@2x.jpg" title="Simple iPad Icons"><img src="images/item02.jpg" alt="old-style ipad icons"></a></li>
+          <!-- https://dribbble.com/shots/1543899-iPad-icons -->
+          
+          <li><a href="images/item03@2x.jpg" title="Mobile Profile"><img src="images/item03.jpg" alt="mobile iphone app profile ui"></a></li>
+          <!-- https://dribbble.com/shots/1543085-Profile -->
+          
+          <li><a href="images/item04@2x.jpg" title="New Shoes"><img src="images/item04.jpg" alt="new balance shoes"></a></li>
+          <!-- https://dribbble.com/shots/1543210-574 -->
+          
+          <li><a href="images/item05@2x.jpg" title="Rive Radio Icon"><img src="images/item05.jpg" alt="rive radio icon"></a></li>
+          <!-- https://dribbble.com/shots/1543610-Rive-Radio-app-icon-design -->
+          
+          <li><a href="images/item06@2x.jpg" title="Blood Pressure app"><img src="images/item06.jpg" alt="blood pressure app ui"></a></li>
+          <!-- https://dribbble.com/shots/1543316-Blood-Pressure-App -->
+          
+          <li><a href="images/item07@2x.jpg" title="Memories Feed UI"><img src="images/item07.jpg" alt="memories feed ui iphone"></a></li>
+          <!-- https://dribbble.com/shots/1544255-Memories-Feed -->
+          
+          <li><a href="images/item08@2x.jpg" title="Vector Devices"><img src="images/item08.jpg" alt="apple device vector icons"></a></li>
+          <!-- https://dribbble.com/shots/1544323-bc-pixels-fluid -->
+        </ul>
+
+      </div> <!-- pf_wrapper -->
+
+      <div class="sous_titre">
+        <h3 id="web">Web</h3>
+        <div class="trait"></div>
+      </div>
+
+      <div class="pf_wrapper">
+      
+        <ul id="portfolio2" class="clearfix">
+          <li><a href="images/item01@2x.jpg" title="Brick and Bay Windows"><img src="images/item01.jpg" alt="brick and by windows"></a></li>
+          <!-- https://dribbble.com/shots/1543255-Brick-and-Bay-Windows -->
+          
+          <li><a href="images/item02@2x.jpg" title="Simple iPad Icons"><img src="images/item02.jpg" alt="old-style ipad icons"></a></li>
+          <!-- https://dribbble.com/shots/1543899-iPad-icons -->
+          
+          <li><a href="images/item03@2x.jpg" title="Mobile Profile"><img src="images/item03.jpg" alt="mobile iphone app profile ui"></a></li>
+          <!-- https://dribbble.com/shots/1543085-Profile -->
+          
+          <li><a href="images/item04@2x.jpg" title="New Shoes"><img src="images/item04.jpg" alt="new balance shoes"></a></li>
+          <!-- https://dribbble.com/shots/1543210-574 -->
+          
+          <li><a href="images/item05@2x.jpg" title="Rive Radio Icon"><img src="images/item05.jpg" alt="rive radio icon"></a></li>
+          <!-- https://dribbble.com/shots/1543610-Rive-Radio-app-icon-design -->
+          
+          <li><a href="images/item06@2x.jpg" title="Blood Pressure app"><img src="images/item06.jpg" alt="blood pressure app ui"></a></li>
+          <!-- https://dribbble.com/shots/1543316-Blood-Pressure-App -->
+          
+          <li><a href="images/item07@2x.jpg" title="Memories Feed UI"><img src="images/item07.jpg" alt="memories feed ui iphone"></a></li>
+          <!-- https://dribbble.com/shots/1544255-Memories-Feed -->
+          
+          <li><a href="images/item08@2x.jpg" title="Vector Devices"><img src="images/item08.jpg" alt="apple device vector icons"></a></li>
+          <!-- https://dribbble.com/shots/1544323-bc-pixels-fluid -->
+        </ul>
+
+      </div> <!-- pf_wrapper -->
+
+      <div class="sous_titre">
+        <h3 id="illustrations">Illustrations</h3>
+        <div class="trait"></div>
+      </div>
+
+      <div class="pf_wrapper">
+      
+        <ul id="portfolio3" class="clearfix">
+          <li><a href="images/item01@2x.jpg" title="Brick and Bay Windows"><img src="images/item01.jpg" alt="brick and by windows"></a></li>
+          <!-- https://dribbble.com/shots/1543255-Brick-and-Bay-Windows -->
+          
+          <li><a href="images/item02@2x.jpg" title="Simple iPad Icons"><img src="images/item02.jpg" alt="old-style ipad icons"></a></li>
+          <!-- https://dribbble.com/shots/1543899-iPad-icons -->
+          
+          <li><a href="images/item03@2x.jpg" title="Mobile Profile"><img src="images/item03.jpg" alt="mobile iphone app profile ui"></a></li>
+          <!-- https://dribbble.com/shots/1543085-Profile -->
+          
+          <li><a href="images/item04@2x.jpg" title="New Shoes"><img src="images/item04.jpg" alt="new balance shoes"></a></li>
+          <!-- https://dribbble.com/shots/1543210-574 -->
+          
+          <li><a href="images/item05@2x.jpg" title="Rive Radio Icon"><img src="images/item05.jpg" alt="rive radio icon"></a></li>
+          <!-- https://dribbble.com/shots/1543610-Rive-Radio-app-icon-design -->
+          
+          <li><a href="images/item06@2x.jpg" title="Blood Pressure app"><img src="images/item06.jpg" alt="blood pressure app ui"></a></li>
+          <!-- https://dribbble.com/shots/1543316-Blood-Pressure-App -->
+          
+          <li><a href="images/item07@2x.jpg" title="Memories Feed UI"><img src="images/item07.jpg" alt="memories feed ui iphone"></a></li>
+          <!-- https://dribbble.com/shots/1544255-Memories-Feed -->
+          
+          <li><a href="images/item08@2x.jpg" title="Vector Devices"><img src="images/item08.jpg" alt="apple device vector icons"></a></li>
+          <!-- https://dribbble.com/shots/1544323-bc-pixels-fluid -->
+        </ul>
+
+      </div> <!-- pf_wrapper -->
+
+    </main>
+
+    <footer>
+
+      <div>
+        Copyright - tamise 2016
+      </div>
+
+    </footer>
+    
+
+
+
+
+    </body>
+
+
+</html>

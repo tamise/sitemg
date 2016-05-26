@@ -9,7 +9,11 @@
         <link rel="stylesheet" href="mgstyle_fp.css" />
         <link rel="stylesheet" href="mgresp.css" /> <!-- responsive style sheet --> 
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'><!-- police "lato" --> 
+        <link rel="stylesheet" type="text/css" media="all" href="css/magnific-popup.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+
 
          <script type="text/javascript"> // animation icone hamburger
           $(document).ready(function(){
@@ -24,6 +28,23 @@
               $('.menu_resp').toggleClass('expand')
             })
           })
+        </script>
+         <script type="text/javascript"> // lightbox responsive
+        $(function(){
+          $('#news').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            image: {
+              cursor: null,
+              titleSrc: 'title'
+            },
+            gallery: {
+              enabled: true,
+              preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+              navigateByImgClick: true
+            }
+          });
+        });
         </script>
         <title>Tamise - Infographie</title>
     </head>
@@ -58,9 +79,9 @@
 					</li>
 					<li class="our_content"><span style="background-color: #fff"><a href="cv.html" style="color: #000">CV</a></span>
 					</li>
-					<li class="our_content"><span style="background-color: #fff"><a href="#"style="color: #000">Blog</a></span>
+					<li class="our_content"><span style="background-color: #fff"><a href="blog.html"style="color: #000">Blog</a></span>
 					</li>
-					<li class="our_content"><span style="background-color: #fff"><a href="#"style="color: #000">Contact</a></span>
+					<li class="our_content"><span style="background-color: #fff"><a href="contact.html"style="color: #000">Contact</a></span>
 					</li>
 				</ul><!-- #outside_box-->
 
@@ -71,8 +92,8 @@
 		          <li><a href="portfolio.html?#web">Web</a></li>
 		          <li><a href="portfolio.html?#illustrations">Illustrations</a></li>
 		          <li><a href="cv.html">CV</a></li>
-		          <li><a href="#">Blog</a></li>
-		          <li><a href="#">Contact</a></li>
+		          <li><a href="blog.html">Blog</a></li>
+		          <li><a href="contact.html">Contact</a></li>
 		        </ul><!-- menu_resp-->
 			</nav>
 
@@ -84,7 +105,7 @@
 			</div>
 			<div class="centerize"><img src="images/fond2.png" id="fond2">
 			</div>
-			<div id="conteneur-monde" class="centerize"><img src="images/monde.png" id="monde">
+			<div id="conteneur-monde" class="centerize"><img src="images/mg_monde.svg" id="monde"><img src="images/mg_portable.svg" id="portable">
 			</div>
 			<div id="contenu_bicolor">
 				<div id="bloc_trans"><img src="images/img_trans.png">
@@ -101,16 +122,28 @@
 			
 			<div id="contenant_txt">
 				<div id="apropos"><h1>à propos de moi</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet, magna ac accumsan placerat, massa odio varius arcu, id gravida odio sapien tristique mauris. Integer ullamcorper purus non gravida porta. Suspendisse vulputate auctor nisi at mollis. Nunc quis faucibus libero. Sed fermentum, sapien in rhoncus ultrices, lacus ante rhoncus urna, eu ultrices justo justo quis tortor. Curabitur posuere consectetur dolor, at bibendum libero. Vestibulum consequat odio sed mi aliquam, et laoreet magna tempus. Nullam nibh dui, pulvinar non nunc quis, faucibus porta nisi. Curabitur nec blandit nisi, vitae scelerisque nibh.</p>
+					<p>Je suis une infographiste lyonnaise, amatrice de geekeries, et d'objets connectés en tout genre. Initialement illustratrice, puis infographiste créa print, je me lance maintenant dans le domaine du web.</br>
+					Je vois ce site comme un petit laboratoire qui me permet de combiner design et intégration, de tester le responsive... Mais aussi comme un portfolio.</p>
 				</div><!-- #apropos-->
 				<div id="wip"><h1>Travaux récents</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet, magna ac accumsan placerat, massa odio varius arcu, id gravida odio sapien tristique mauris. Integer ullamcorper purus non gravida porta. Suspendisse vulputate auctor nisi at mollis. Nunc quis faucibus libero. Sed fermentum, sapien in rhoncus ultrices, lacus ante rhoncus urna, eu ultrices justo justo quis tortor. Curabitur posuere consectetur dolor, at bibendum libero. Vestibulum consequat odio sed mi aliquam, et laoreet magna tempus. Nullam nibh dui, pulvinar non nunc quis, faucibus porta nisi. Curabitur nec blandit nisi, vitae scelerisque nibh.</p>
-					<p class="conteneur_galerie">
-						<a href=""><img src="images/shutterstock_357753350.jpg" /></a>
-						<a href=""><img src="images/shutterstock_65954812.jpg" /></a>
-						<a href=""><img src="images/shutterstock_181472597.jpg" /></a>
-						<a href=""><img src="images/shutterstock_292663790.jpg" /></a>
-					</p>
+					
+					<div class="pf_wrapper">
+      
+				        <ul id="news" class="clearfix">
+
+				        <li><a href="images/resp1_2x.jpg" title="mon site responsive (maquette et intégration)"><img src="images/resp1.jpg" alt="monsite responsive"></a></li>
+          				<!-- mon site -->
+
+          				<li><a href="images/kale_2x.jpg" title="logo de la chorale du Kaleïdophone"><img src="images/kale.jpg" alt="monsite responsive"></a></li>
+          				<!-- logo Kaleidophone -->
+
+          				<li><a href="images/vaucanson_2x.jpg" title="Document sur l'accueil des enfants pour la crèche Vaucanson"><img src="images/vaucanson.jpg" alt="document pour la crèche Vaucanson"></a></li>
+          				<!-- Flyer Vaucanson -->
+
+        				</ul>
+
+    			    </div> <!-- pf_wrapper -->
+
 				</div><!-- #wip -->
 			</div><!-- #contenant_txt -->
 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="mgstyle.css" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="mgresp.css" /> <!-- responsive style sheet --> 
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'><!-- police "lato" --> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+         <script type="text/javascript"> // animation icone hamburger
+          $(document).ready(function(){
+            $('#nav-icon').click(function(){
+             $(this).toggleClass('open');
+            });
+          });
+        </script>
+        <script type="text/javascript"> // toggle du menu mobile
+          jQuery(function($){
+            $( '#nav-icon' ).click(function(){
+              $('.menu_resp').toggleClass('expand')
+            })
+          })
+        </script>
+        <title>Tamise - Infographie</title>
+
+    </head>
+
+
+    <body>
+
+    
+    <header>
+      <div id="barre1">
+              <div id="logo">
+                <a href="index.html"><img src="images/logo_b.png"></a>
+              </div> <!-- #logo-->
+              <div id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+      </div>
+
+      <nav>
+        <ul class="outside_box">
+          <li class="our_content" class="position"><span><a href="index.html"><img src="images/home_b.png" class="home"></a></span></li>
+          <li class="our_content" class="position"><span><a href="portfolio.html">Portfolio</a></span>
+            <ul class="submenu">
+              <li><a href="portfolio.html?#print">Print</a></li>
+              <li><a href="portfolio.html?#web">Web</a></li>
+              <li><a href="portfolio.html?#illustrations">Illustrations</a></li>
+            </ul><!-- #submenu-->
+          </li>
+          <li class="our_content"><span><a href="cv.html">CV</a></span>
+          </li>
+          <li class="our_content"><span><a href="blog.html">Blog</a></span>
+          </li>
+          <li class="our_content"><span style="border-bottom: 5px solid #fdb813;" ><a href="contact.html">Contact</a></span>
+          </li>
+        </ul><!-- #outside_box-->
+
+        <ul class="menu_resp">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html?#print">Print</a></li>
+          <li><a href="portfolio.html?#web">Web</a></li>
+          <li><a href="portfolio.html?#illustrations">Illustrations</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul><!-- menu_resp-->
+      </nav>
+
+    </header>
+
+    <main id="cv">
+      <div class="titre">
+          <div class="carre">
+          </div>
+            <h1>Contact</h1>
+      </div><!-- .titre-->
+
+      <section id="conteneur">
+
+        <div id="mail"><a href="mailto:mglecoz@gmail.com"><img src="images/mail.svg"></a>
+        </div>
+
+      </section> <!-- #conteneur-->
+
+    </main>
+
+    <footer>
+
+      <div>
+        Copyright - tamise 2016
+      </div>
+
+    </footer>
+    
+
+
+
+
+    </body>
+
+
+</html>
